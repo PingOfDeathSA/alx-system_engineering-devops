@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Set the input and output file names
+CFILE="main.c"
+ASSEMBLY_FILE="${CFILE%.*}.s"
+
+# Generate the assembly code and save it to the output file
+gcc -S -masm=intel $CFILE -o $ASSEMBLY_FILE
+
+echo "Assembly code saved to $ASSEMBLY_FILE"
+
