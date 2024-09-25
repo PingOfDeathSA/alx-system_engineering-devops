@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir test cd test ls -l touch file0.c~ ls -l rm file0.c~ ls -l
+rm *~
