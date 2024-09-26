@@ -1,58 +1,92 @@
-0x05. Processes and signals
-DevOps
-Shell
-Bash
-Syscall
-Scripting
- By: Sylvain Kalache
- Weight: 1
- Ongoing second chance project - started Oct 14, 2022 6:00 AM, must end by Oct 18, 2022 6:00 AM
- An auto review will be launched at the deadline
-In a nutshell…
-Auto QA review: 0.0/26 mandatory & 0.0/17 optional
-Altogether:  0.0%
-Mandatory: 0.0%
-Optional: 0.0%
-Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
-About Bash projects
-Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
+# 0x05. Processes and signals 
 
-Resources
-Read or watch:
+## Resource
 
-Linux PID
-Linux process
-Linux signal
-man or help:
+- [Linux PID](http://www.linfo.org/pid.html)
+- [Linux process](https://www.thegeekstuff.com/2012/03/linux-processes-environment/)
+- [Linux signal](https://www.thegeekstuff.com/2012/03/linux-signals-fundamentals/)
 
-ps
-pgrep
-pkill
-kill
-exit
-trap
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+## Tasks
 
-General
-What is a PID
-What is a process
-How to find a process’ PID
-How to kill a process
-What is a signal
-What are the 2 signals that cannot be ignored
-Copyright - Plagiarism
-You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-You are not allowed to publish any content of this project.
-Any form of plagiarism is strictly forbidden and will result in removal from the program.
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be interpreted on Ubuntu 20.04 LTS
-All your files should end with a new line
-A README.md file, at the root of the folder of the project, is mandatory
-All your Bash script files must be executable
-Your Bash script must pass Shellcheck (version 0.7.0 via apt-get) without any error
-The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
-The second line of all your Bash scripts should be a comment explaining what is the script doing
+<details>
+<summary><a href="./0-what-is-my-pid">0. What is my PID</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/NFCmFGcj/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./1-list_your_processes">1. List your processes</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/zXW2M4SR/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./2-show_your_bash_pid">2. Show your Bash PID</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/T3pRbrz9/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./3-show_your_bash_pid_made_easy">3. Show your Bash PID made easy</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/4NCc3xjn/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./4-to_infinity_and_beyond">4. To infinity and beyond</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/59rp1zBz/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./5-dont_stop_me_now">5. Don't stop me now!</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/CMWh8vCx/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./6-stop_me_if_you_can">6. Stop me if you can</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/2SLpdvYF/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./7-highlander">7. Highlander</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/1z5yGXW9/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./8-beheaded_process">8. Beheaded process</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/W4Xg8DTS/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./beheaded_process">9. Beheaded process</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/W4Xg8DTS/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./100-process_and_pid_file">10. Process and PID file</a></summary><br>
+<a href='https://postimg.cc/VdHnF6Cd' target='_blank'><img src='https://i.postimg.cc/rwqjMRyC/image.png' border='0' alt='image'/></a>
+</details>
+
+<details>
+<summary><a href="./101-manage_my_process">11. Manage my process</a></summary><br>
+<a href='https://postimg.cc/2qPfd4z2' target='_blank'><img src='https://i.postimg.cc/gJ0kWD1F/image.png' border='0' alt='image'/></a>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://bashitout.com/2013/05/18/Ampersands-on-the-command-line.html">&</a></li>
+      <li><a href="https://www.ghacks.net/2009/04/04/get-to-know-linux-the-etcinitd-directory/">init.d</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Daemon_%28computing%29">Daemon</a></li>
+      <li><a href="https://www.gnu.org/software/bash/manual/html_node/Positional-Parameters.html">Positional parameters</a></li>
+      <li><a href="./manage_my_process">manage_my_process</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
+
+<details>
+<summary><a href="./102-zombie.c">12. Zombie</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/ry1qKz2Y/image.png' border='0' alt='image'/></a>
+<ul>
+  <li>Links from screenshot
+  <ul>
+      <li><a href="https://zombieprocess.wordpress.com/what-is-a-zombie-process/">what a zombie process is</a></li>
+  </ul>
+  </li>
+</ul>
+</details>
