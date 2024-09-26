@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''A module containing functions for working with the Reddit API.
+'''Functions for working with the Reddit API.
 '''
 import requests
 
@@ -45,14 +45,12 @@ def count_words(subreddit, word_list, histogram=[], n=0, after=None):
             'Edg/97.0.1072.62'
         ])
     }
-    sort = 'hot'
-    limit = 30
     res = requests.get(
         '{}/r/{}/.json?sort={}&limit={}&count={}&after={}'.format(
             'https://www.reddit.com',
             subreddit,
-            sort,
-            limit,
+            'hot',
+            30,
             n,
             after if after else ''
         ),
@@ -73,7 +71,7 @@ def count_words(subreddit, word_list, histogram=[], n=0, after=None):
             )))),
             histogram
         ))
-        if len(posts) >= limit and data['after']:
+        if len(posts) >= 30 and data['after']:
             count_words(
                 subreddit,
                 word_list,
